@@ -1,7 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./src/App"
 
 console.log("Coucou depuis tsx!")
 
-ReactDOM.render(<App/>, document.getElementById("root"))
+ReactDOM.render(<p>Hello World</p>, document.getElementById("root"))
