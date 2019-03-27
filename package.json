@@ -1,8 +1,6 @@
 {
   "name": "webapp",
-  "version": "1.0.0",
   "main": "index.tsx",
-  "license": "MIT",
   "sideEffects": false,
   "dependencies": {
     "react": "16.8.5",
@@ -18,10 +16,7 @@
     "@types/react": "16.8.8",
     "@types/react-dom": "16.8.3",
     "concurrently": "4.1.0",
-    "cross-env": "5.2.0",
     "parcel-bundler": "1.12.3",
-    "parcel-plugin-bundle-visualiser": "1.2.0",
-    "react-intl-translations-manager": "5.0.3",
     "typescript": "3.3.4000"
   },
   "scripts": {
@@ -29,8 +24,6 @@
     "prebuild": "rm -rf ./build/*",
     "build": "parcel build ./index.html --out-dir  ./build --no-source-maps",
     "build:shake": "yarn build --experimental-scope-hoisting",
-    "test": "jest",
-    "test:watch": "jest --watch",
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch"
   }
